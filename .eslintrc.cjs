@@ -33,6 +33,7 @@ module.exports = {
    * 2 ~ 'error'
    */
   rules: {
+    'import/no-extraneous-dependencies': 0,
     // general
     'no-alert': 0,
     camelcase: 0,
