@@ -1,6 +1,8 @@
 import ReactDOM from 'react-dom/client';
 import { Suspense, StrictMode } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Analytics } from '@vercel/analytics/next';
 import { HelmetProvider } from 'react-helmet-async';
 
 import App from './app';
@@ -15,6 +17,7 @@ root.render(
       <BrowserRouter>
         <Suspense>
           <App />
+          <Analytics />
         </Suspense>
       </BrowserRouter>
     </HelmetProvider>
